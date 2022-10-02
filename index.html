@@ -26,6 +26,64 @@
             <use href="./img/icons.svg#close-modal"></use>
           </svg>
         </button>
+
+        <form class="user-data">
+          <legend>Залиште свої дані, ми Вам передзвонимо</legend>
+          <fieldset class="user-input">
+            <div class="user-input-field">
+              <div class="user-input-item">
+                <input type="text" name="name" id="name" required>
+                <svg class="svg-form-icon">
+                  <use href="./img/icons.svg#person-form">
+                  </use>
+                </svg>
+              </div>
+              <label for="name">Ім'я</label>
+            </div>
+            
+            <div class="user-input-field">
+              <div class="user-input-item">
+                <input type="tel" name="phone" id="phone" required>
+                <svg class="svg-form-icon">
+                  <use href="./img/icons.svg#phone-form">
+                  </use>
+                </svg>
+              </div>
+              <label for="phone">Телефон</label>
+            </div>
+            
+            <div class="user-input-field">
+              <div class="user-input-item">
+                <input type="email" name="mail" id="mail">
+                <svg class="svg-form-icon">
+                  <use href="./img/icons.svg#email-form">
+                  </use>
+                </svg> 
+              </div>
+              <label for="mail">Пошта</label>
+            </div>
+            
+            <div class="user-input-field">
+              <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+              <label for="comment">Коментар</label>
+            </div>
+          </fieldset>
+
+          <div class="form-checkbox">
+            <input class="form-checkbox-input" type="checkbox" name="agreement" id="agreement" value="agreed" required>
+            <label class="form-checkbox-label" for="agreement">
+              <svg class="svg-checkbox">
+                <use class="svg-checkbox-unchecked" href="./img/icons.svg#chb-unchecked"></use>
+                <use class="svg-checkbox-checked" href="./img/icons.svg#chb-checked"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю&nbsp;<a class="form-checkbox-link" href="">Умови договору</a>
+            </label>
+          </div>
+
+          <button class="modal-submit" type="submit">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
 
@@ -407,6 +465,22 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-mailing">
+          <legend class="visually-hidden"></legend>
+          <label for="mailing">Підпишіться на розсилку</label>
+
+          <div class="mailing-inputs">
+            <input type="email" name="mailing" id="mailing" placeholder="E-mail">
+
+            <button class="mailing-button" type="submit">
+              Підписатися
+              <svg class="svg-mailing">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
