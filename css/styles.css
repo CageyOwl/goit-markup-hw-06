@@ -197,7 +197,6 @@ main img {
   outline: none;
   border: 1px solid var(--form-border-grey);
   border-radius: 4px ;
-  color: var(--form-border-grey);
 
   transition: border-color var(--transition-delay) var(--transition-timing-function);
 }
@@ -724,10 +723,6 @@ ul {
   align-items: baseline;
 }
 
-.footer-custom > .flex {
-  gap: 93px;
-}
-
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -746,6 +741,10 @@ ul {
   line-height: 1.71;
   margin-top: 6px;
   color: var(--footer-font-transparent);
+}
+
+.footer-socials-container {
+  margin-left: 95px;
 }
 
 .footer-socials-container > p {
@@ -778,6 +777,10 @@ ul {
   background-color: var(--accentuation-color);
 }
 
+.footer-mailing {
+  margin-left: auto;
+}
+
 .footer-mailing > label {
   display: block;
   margin-bottom: 20px;
@@ -796,7 +799,7 @@ ul {
 }
 
 .mailing-inputs > input {
-  flex: 1 0 358px;
+  width: 358px;
   padding: 14px 15px;
 
   font-size: 16px;
